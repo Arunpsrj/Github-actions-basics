@@ -21,7 +21,7 @@ jobs:
     name: Selenium Test Job2
     runs-on: ubuntu-latest
     needs: Selenium_Test_Job1
-    if: always()
+    if: ${{ always() }}
     
     steps:
       - run: echo "This is from second job"
