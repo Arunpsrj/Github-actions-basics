@@ -13,7 +13,7 @@ jobs:
       - run: echo "This repo is ${{ github.repository }}.."
       - name: Run a inline script
         run: |
-          ertetrtetet
+          mkdir newfolder
           ls -l
         shell: bash
         
