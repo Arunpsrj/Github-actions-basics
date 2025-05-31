@@ -8,3 +8,12 @@ jobs:
 
     steps:
       - run: echo "This is running inside a ${{ runner.os }} server in Github"
+      - name: Check out Source code
+        uses: actions/checkout@v4.2.2
+      - run: echo "This repo is ${{ github.repository }}.."
+      - name: Run a inline script
+        run: |
+          mkdir newfolder
+          ls -l
+        shell: bash
+        
